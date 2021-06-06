@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-flex">
+                <div class="brand">
+                    <h4 class="logo">Blogr</h4>
+                    
+                </div>
+                <div class="hamburger">
+                    <img id="menu-icon" src="./images/icon-hamburger.svg" alt="">
+                </div>
+                
+                <div id="navigation" class="navigation">
+                    <nav id="navUL" class="navbar">
+                        <ul>
+                            <li class="outerlist">
+                                Products <img src="./images/icon-arrow-light.svg" alt="">
+                                <ul id="productsList" class="navlist">
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Marketplace</a></li>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Integrations</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="outerlist">
+                                Company <img src="./images/icon-arrow-light.svg" alt="">
+                                <ul id="productsList" class="navlist">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li class="outerlist">
+                                Connect <img src="./images/icon-arrow-light.svg" alt="">
+                                <ul id="productsList" class="navlist">
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Newsletter</a></li>
+                                    <li><a href="#">LinkedIn</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    <div class="nav-buttons">
+                        <button class="login-btn">Login</button>
+                        <button class="signup-btn">sign up</button>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            <div class="brand-info">
+                <h4>A modern publishing platform</h4>
+                <span>Grow your audience and build your online brand</span>
+                <div class="header-buttons">
+                    <button class="header-btn start">Start for Free</button>
+                    <button class="header-btn learn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="sectionHeader">
+                Designed for the future
+            </div>
+            <div class="section-flex">
+                <div class="first-left">
+                    <p class="section-subHeaders">Introducing an extensible editor</p>
+                    <p class="section-body">
+                        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+                    </p>
+                    <p class="section-subHeaders">Robust content management</p>
+                    <p class="section-body">
+                        Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                    </p>
+                </div>
+                <div class="first-right">
+                    <img src="./images/illustration-editor-mobile.svg" alt="">
+                </div>
+            </div>
+            
+        </section>
+        <section class="second">
+            <div class="second-inner">
+                <div class="second-left">
+                    <img src="./images/illustration-phones.svg" alt="">
+                </div>
+                <div class="second-right">
+                    <h4 class="second-right-header">State of the Art Infrastructure</h4>
+                    <p class="second-right-body">
+                        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                    </p>
+
+                </div>
+            </div>
+            
+        </section>
+        <section class="third">
+            <div class="third-left">
+                <img id="third-image" src="./images/illustration-laptop-desktop.svg" alt="">
+            </div>
+            <div class="third-right">
+                <h4>Free, open, simple</h4>
+                <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+                <h4>Powerful tooling</h4>
+                <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            Blogr
+        </div>
+        <div class="footer-right">
+            <ul>
+                <h5>Product</h5>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+            </ul>
+            <ul>
+                <h5>Company</h5>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <ul>
+                <h5>Connect</h5>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        var navUL = document.getElementById('navigation');
+        var ham = document.getElementById('menu-icon');
+
+        ham.addEventListener('click', () => {
+            navUL.classList.toggle('active');
+        })
+
+    </script>
+</body>
+</html>
