@@ -715,7 +715,11 @@ footer a {
     }
 
     .active {
+        width: 100%;
         max-width: calc(100% - 2em);
+    }
+    .close {
+        content: url('./images/icon-close.svg');
     }
     .brand-info h4 {
         font-size: 2.2em;
